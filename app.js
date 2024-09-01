@@ -2,11 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const port = 3000;
-const client = require("./db");
-var { LocalStorage } = require("node-localstorage"),
-  localStorage = new LocalStorage("./storage");
-const bodyParser = require("body-parser");
-const checkRole = require("./safety");
 // Middleware
 app.use(cors());
 app.use(express.json());
